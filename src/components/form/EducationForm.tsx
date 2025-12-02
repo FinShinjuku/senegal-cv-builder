@@ -93,7 +93,7 @@ export default function EducationForm({ data, onChange }: EducationFormProps) {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Domaine d'Études <span className="text-red-500">*</span>
+                      Domaine d&apos;Études <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"

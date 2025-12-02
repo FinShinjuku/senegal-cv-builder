@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { TemplateType } from '@/types/cv';
 
 interface TemplateOption {
@@ -150,7 +150,7 @@ export default function TemplateSelector({
       {/* Color Selection */}
       {onSelectColor && currentTemplate && (
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-gray-900">Couleur d'accent</h3>
+          <h3 className="text-lg font-semibold mb-4 text-gray-900">Couleur d&apos;accent</h3>
           <div className="flex gap-3">
             {currentTemplate.accentColors.map((color) => (
               <button
@@ -199,7 +199,7 @@ export default function TemplateSelector({
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-green-600">✓</span>
-                Timeline verticale pour l'expérience
+                Timeline verticale pour l&apos;expérience
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-green-600">✓</span>
@@ -231,7 +231,7 @@ export default function TemplateSelector({
             <>
               <li className="flex items-center gap-2">
                 <span className="text-green-600">✓</span>
-                Design épuré avec beaucoup d'espace blanc
+                Design épuré avec beaucoup d&apos;espace blanc
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-green-600">✓</span>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { useTranslations } from 'next-intl';
 import { useCVStore } from '@/store/cvStore';
 import PersonalInfoForm from '@/components/form/PersonalInfoForm';
@@ -45,7 +45,13 @@ export default function BuilderPage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [showPreview, setShowPreview] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+
+  // Hydration-safe mounting detection
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   const store = useCVStore();
   const {
@@ -106,9 +112,6 @@ export default function BuilderPage() {
     });
   };
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const stepLabels: Record<string, string> = {
     personal: t('sections.personalInfo'),

@@ -92,7 +92,7 @@ export default function SkillsForm({ data, onChange }: SkillsFormProps) {
         </div>
       ) : (
         <div className="space-y-4">
-          {data.map((skill, index) => (
+          {data.map((skill) => (
             <div
               key={skill.id}
               className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow"
@@ -168,7 +168,7 @@ export default function SkillsForm({ data, onChange }: SkillsFormProps) {
             <div>• Microsoft Office</div>
             <div>• Gestion de projet</div>
             <div>• Communication</div>
-            <div>• Travail d'équipe</div>
+            <div>• Travail d&apos;équipe</div>
             <div>• Langages de programmation</div>
             <div>• Réseaux sociaux</div>
             <div>• Comptabilité</div>

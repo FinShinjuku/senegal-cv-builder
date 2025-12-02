@@ -58,13 +58,13 @@ export default function ObjectiveForm({ data, onChange }: ObjectiveFormProps) {
         <p className="text-sm font-medium text-gray-700 mb-2">Exemples :</p>
         <div className="space-y-2">
           <div className="text-xs text-gray-600 bg-white p-3 rounded border border-gray-200">
-            <strong>Marketing :</strong> "Spécialiste marketing digital avec 3 ans d'expérience en gestion de campagnes sur les réseaux sociaux. Expertise en analyse de données et création de contenu engageant."
+            <strong>Marketing :</strong> &quot;Spécialiste marketing digital avec 3 ans d&apos;expérience en gestion de campagnes sur les réseaux sociaux. Expertise en analyse de données et création de contenu engageant.&quot;
           </div>
           <div className="text-xs text-gray-600 bg-white p-3 rounded border border-gray-200">
-            <strong>Informatique :</strong> "Développeur full-stack passionné par les technologies web modernes. Compétent en React, Node.js et bases de données. Cherche à contribuer à des projets innovants."
+            <strong>Informatique :</strong> &quot;Développeur full-stack passionné par les technologies web modernes. Compétent en React, Node.js et bases de données. Cherche à contribuer à des projets innovants.&quot;
           </div>
           <div className="text-xs text-gray-600 bg-white p-3 rounded border border-gray-200">
-            <strong>Commerce :</strong> "Commercial motivé avec un excellent sens du relationnel. Expérience prouvée dans l'atteinte des objectifs de vente. Souhait de développer mon expertise dans le secteur des télécommunications."
+            <strong>Commerce :</strong> &quot;Commercial motivé avec un excellent sens du relationnel. Expérience prouvée dans l&apos;atteinte des objectifs de vente. Souhait de développer mon expertise dans le secteur des télécommunications.&quot;
           </div>
         </div>
       </div>
