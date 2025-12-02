@@ -150,7 +150,7 @@ export async function exportToPDF(
     pdf.setPage(totalPages);
     pdf.setFontSize(8);
     pdf.setTextColor(150, 150, 150);
-    const copyrightText = `© ${new Date().getFullYear()} customercloud - CV Builder`;
+    const copyrightText = `© ${new Date().getFullYear()} customercloud - Aisha Consulting - CV Builder`;
     const textWidth = pdf.getTextWidth(copyrightText);
     pdf.text(copyrightText, (pdfWidth - textWidth) / 2, pdfHeight - 5);
 
